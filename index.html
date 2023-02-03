@@ -9,8 +9,8 @@
 </head>
 
 <body>
-   <main>
-      <section>
+   <section>
+      <article>
          <h1>Структурирование контента в HTML: как не перепутать div, section, article и aside?</h1>
          <p>
             Ещё одна причина любить и уважать HTML5 — его громадный вклад в семантику кода. То есть, код теперь имеет
@@ -30,10 +30,10 @@
             применении и
             комбинировании.
          </p>
-      </section>
-      <section>
+      </article>
+      <article>
          <h2>Обзор элементов</h2>
-         <article>
+         <section>
             <h3>div</h3>
             <p>
                Элемент <strong>div</strong> является, пожалуй, самым универсальным блочным элементом. При этом у него
@@ -47,12 +47,14 @@
                никакие другие
                элементы не подходят!
             </p>
-            <p>
-               Элемент <strong>div</strong> чаще всего используется как контейнер для других элементов
-            </p>
-            <img src="./image/div.jpg" alt="Фото описание div">
-         </article>
-         <article>
+            <figure>
+               <figcaption>
+                  Элемент <strong>div</strong> чаще всего используется как контейнер для других элементов:
+               </figcaption>
+               <img src="./image/div.jpg" alt="Фото описание div">
+            </figure>
+         </section>
+         <section>
             <h3>section</h3>
             <p>
                В отличие от <strong>div</strong>, тег <strong>section</strong> применяется к общим разделам контента,
@@ -62,13 +64,15 @@
                Главное правило: элемент <strong>section</strong> уместно использовать только тогда, когда его содержимое
                явно указывается в структуре. Например, в качестве раздела.
             </p>
-            <p>
-               В силу того, что содержимое тега <strong>section</strong> имеет семантическую общность — «тему» — её
-               необходимо указать с помощью заголовка. Часто «тема» указывается сразу после открытия тега:
-            </p>
-            <img src="./image/section.jpg" alt="Фото описание section">
-         </article>
-         <article>
+            <figure>
+               <figcaption>
+                  В силу того, что содержимое тега <strong>section</strong> имеет семантическую общность — «тему» — её
+                  необходимо указать с помощью заголовка. Часто «тема» указывается сразу после открытия тега:
+               </figcaption>
+               <img src="./image/section.jpg" alt="Фото описание section">
+            </figure>
+         </section>
+         <section>
             <h3>article</h3>
             <p>
                Тег <strong>article</strong> ещё более уточняющий и конкретный, чем тег <strong>section</strong>. Он так
@@ -76,13 +80,15 @@
                быть независимым и самодостаточным — это, своего рода, отдельная статья. При изолировании содержимого
                тега <strong>article</strong> от остальной части страницы должны сохраняться его смысл и законченность.
             </p>
-            <p>
-               Чаще всего тег <strong>article</strong> применяется к статье на сайте, отдельной новости, посту блога,
-               сообщению форума или комментариям:
-            </p>
-            <img src="./image/article.jpg" alt="Фото описание article">
-         </article>
-         <article>
+            <figure>
+               <figcaption>
+                  Чаще всего тег <strong>article</strong> применяется к статье на сайте, отдельной новости, посту блога,
+                  сообщению форума или комментариям:
+               </figcaption>
+               <img src="./image/article.jpg" alt="Фото описание article">
+            </figure>
+         </section>
+         <section>
             <h3>aside</h3>
             <p>
                Тег <strong>aside</strong> тоже применяется к блоку для семантического указания раздела. Но у него есть
@@ -91,14 +97,17 @@
                независим (буквально, в стороне) от остального контента. То есть, он может быть вырван из одной страницы
                и вставлен в другую и при этом не потеряет свою актуальность.
             </p>
-            <p>
-               Чаще всего <strong>aside</strong> применяется для боковых панелей, блоков с рекламными баннерами, сносок
-               и другой информации, которая отделена от основного содержимого страницы:
-            </p>
-            <img src="./image/aside.jpg" alt="Фото описание aside">
-         </article>
-      </section>
-      <section>
+            <figure>
+               <figcaption>
+                  Чаще всего <strong>aside</strong> применяется для боковых панелей, блоков с рекламными баннерами,
+                  сносок
+                  и другой информации, которая отделена от основного содержимого страницы:
+               </figcaption>
+               <img src="./image/aside.jpg" alt="Фото описание aside">
+            </figure>
+         </section>
+      </article>
+      <article>
          <h2>Применение div, section, article и aside</h2>
          <p>
             Принимая во внимание особенности элементов, которые мы рассмотрели выше, получаем простой алгоритм для
@@ -120,60 +129,66 @@
                по смыслу между собой, но при этом не связан (слабо связан) с остальным содержимым страницы.
             </li>
          </ul>
-         <p>
-            Для простоты восприятия проиллюстрируем всё это графически:
-         </p>
-         <img src="./image/illustration.jpg" alt="Графическая иллюстрация тегов">
-      </section>
-      <section>
+         <figure>
+            <figcaption>
+               Для простоты восприятия проиллюстрируем всё это графически:
+            </figcaption>
+            <img src="./image/illustration.jpg" alt="Графическая иллюстрация тегов">
+         </figure>
+      </article>
+      <article>
          <h2>Комбинирование элементов</h2>
          <p>
             Теперь рассмотрим ключевые особенности объединения этих элементов вместе.
          </p>
-         <article>
+         <section>
             <h3>article в article</h3>
             <p>
                Элементы <strong>article</strong> можно вкладывать друг в друга. При этом они по-прежнему остаются
                самодостаточными. Предполагается, однако, что содержимое внутреннего <strong>article</strong> связано с
                содержимым внешнего.
             </p>
-            <p>
-               Например, если в посте блога содержится цитата из другого поста — она может быть «обёрнута» в свой
-               <strong>article</strong>:
-            </p>
-            <img src="./image/article_article.jpg" alt="Фото описание article в article">
-         </article>
-         <article>
+            <figure>
+               <figcaption>
+                  Например, если в посте блога содержится цитата из другого поста — она может быть «обёрнута» в свой
+                  <strong>article</strong>:
+               </figcaption>
+               <img src="./image/article_article.jpg" alt="Фото описание article в article">
+            </figure>
+         </section>
+         <section>
             <h3>article в section</h3>
             <p>
                Подобным образом несколько тегов <strong>article</strong> можно «обернуть» в <strong>section</strong>.
             </p>
-            <p>
-               Например, так можно поступить на странице блога, где отображаются последние сообщения. Контейнером для
-               всех постов будет тег <strong>section</strong>, а каждый такой пост обособляется тегом
-               <strong>article</strong>:
-            </p>
-            <img src="./image/article_section.jpg" alt="Фото описание article в section">
-         </article>
-         <article>
+            <figure>
+               <figcaption>
+                  Например, так можно поступить на странице блога, где отображаются последние сообщения. Контейнером для
+                  всех постов будет тег <strong>section</strong>, а каждый такой пост обособляется тегом
+                  <strong>article</strong>:
+               </figcaption>
+               <img src="./image/article_section.jpg" alt="Фото описание article в section">
+            </figure>
+         </section>
+         <section>
             <h3>section в article</h3>
             <p>
                Возможен и обратный вариант, когда каждый тег <strong>article</strong> может иметь один или даже
                несколько тегов <strong>section</strong>.
             </p>
-            <p>
-               Например, эта статья, если была бы частью страницы, могла бы быть размечена так:
-            </p>
-            <img src="./image/section_article.jpg" alt="Фото описание section в article">
-         </article>
-      </section>
-   </main>
-   <footer>
+            <figure>
+               <figcaption>
+                  Например, эта статья, если была бы частью страницы, могла бы быть размечена так:
+               </figcaption>
+               <img src="./image/section_article.jpg" alt="Фото описание section в article">
+            </figure>
+         </section>
+      </article>
       <p>
          Вот и всё! Надеемся, эта статья поможет вам безошибочно определять правильное место для каждого
          структурирующего тега в HTML5.
       </p>
-   </footer>
+   </section>
 </body>
 
 </html>
