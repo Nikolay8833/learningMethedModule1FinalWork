@@ -9,7 +9,7 @@
 </head>
 
 <body>
-   <section>
+   <article>
       <section>
          <h1>Структурирование контента в HTML: как не перепутать div, section, article и aside?</h1>
          <p>
@@ -33,7 +33,7 @@
       </section>
       <section>
          <h2>Обзор элементов</h2>
-         <article>
+         <section>
             <h3>div</h3>
             <p>
                Элемент <strong>div</strong> является, пожалуй, самым универсальным блочным элементом. При этом у него
@@ -53,8 +53,8 @@
                </figcaption>
                <img src="./image/div.jpg" alt="Фото описание div">
             </figure>
-         </article>
-         <article>
+         </section>
+         <section>
             <h3>section</h3>
             <p>
                В отличие от <strong>div</strong>, тег <strong>section</strong> применяется к общим разделам контента,
@@ -71,8 +71,8 @@
                </figcaption>
                <img src="./image/section.jpg" alt="Фото описание section">
             </figure>
-         </article>
-         <article>
+         </section>
+         <section>
             <h3>article</h3>
             <p>
                Тег <strong>article</strong> ещё более уточняющий и конкретный, чем тег <strong>section</strong>. Он так
@@ -87,8 +87,8 @@
                </figcaption>
                <img src="./image/article.jpg" alt="Фото описание article">
             </figure>
-         </article>
-         <article>
+         </section>
+         <section>
             <h3>aside</h3>
             <p>
                Тег <strong>aside</strong> тоже применяется к блоку для семантического указания раздела. Но у него есть
@@ -105,7 +105,7 @@
                </figcaption>
                <img src="./image/aside.jpg" alt="Фото описание aside">
             </figure>
-         </article>
+         </section>
       </section>
       <section>
          <h2>Применение div, section, article и aside</h2>
@@ -141,7 +141,7 @@
          <p>
             Теперь рассмотрим ключевые особенности объединения этих элементов вместе.
          </p>
-         <article>
+         <section>
             <h3>article в article</h3>
             <p>
                Элементы <strong>article</strong> можно вкладывать друг в друга. При этом они по-прежнему остаются
@@ -155,8 +155,8 @@
                </figcaption>
                <img src="./image/article_article.jpg" alt="Фото описание article в article">
             </figure>
-         </article>
-         <article>
+         </section>
+         <section>
             <h3>article в section</h3>
             <p>
                Подобным образом несколько тегов <strong>article</strong> можно «обернуть» в <strong>section</strong>.
@@ -169,8 +169,8 @@
                </figcaption>
                <img src="./image/article_section.jpg" alt="Фото описание article в section">
             </figure>
-         </article>
-         <article>
+         </section>
+         <section>
             <h3>section в article</h3>
             <p>
                Возможен и обратный вариант, когда каждый тег <strong>article</strong> может иметь один или даже
@@ -182,7 +182,7 @@
                </figcaption>
                <img src="./image/section_article.jpg" alt="Фото описание section в article">
             </figure>
-         </article>
+         </section>
       </section>
       <section>
          <p>
@@ -190,7 +190,7 @@
             структурирующего тега в HTML5.
          </p>
       </section>
-   </section>
+   </article>
 </body>
 
 </html>
